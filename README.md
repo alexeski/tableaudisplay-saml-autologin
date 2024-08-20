@@ -17,6 +17,7 @@ This repository contains a simple web application that facilitates auto-login to
 - SAML IdP configured for Tableau authentication.
 - A web server to host the HTML file (optional for local testing).
 - You must be already signed in to the SAML IDP before opening index.html
+- Allow popups on the browser you are running this code (the saml auto-login happens in the popup, which is automatically closed after 5 seconds)
 
 ## Usage
 
