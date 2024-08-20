@@ -1,4 +1,4 @@
-# Auto-Login Tableau Dashboard
+# Tableau Display - Auto-Login Tableau Dashboard with SAML idp
 
 ## Overview
 
