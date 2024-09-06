@@ -23,11 +23,12 @@ This repository contains a simple web application that facilitates auto-login to
 
 Pass the following parameters in the URL to customize the dashboard view:
 
+   - `siteName`: The name of the Tableau Cloud site (default: `mySite`).
    - `workbook`: The name of the Tableau workbook (default: `CompanyAnalysis`).
    - `view`: The name of the Tableau view (default: `KPIOverview`).
    - `entityId`: The SAML entity ID for authentication (look for "Tableau Cloud entity ID" in the Tableau SAML settings page, it looks like this: `a2aecbc1-54e9-4ab0-975c-05eb6f237e8f`).
 
-   Example URL: http://localhost:3000/index.html?workbook=SalesData&view=MonthlyOverview&entityId=your-entity-id
+   Example URL: http://localhost:3000/index.html?siteName=mySite&workbook=SalesData&view=MonthlyOverview&entityId=your-entity-id
    
    The application will open a popup for SSO authentication and redirect to the specified Tableau dashboard after 5 seconds.
 

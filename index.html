@@ -9,6 +9,7 @@
 
       function init() {
         // Get workbook and view parameters from the URL
+        const siteName = getParameterByName("site") || "abac";
         const workbook = getParameterByName("workbook") || "CompanyAnalysis";
         const view = getParameterByName("view") || "KPIOverview";
         const entityId =
@@ -16,7 +17,7 @@
           "a2aecbc1-54e9-4ab0-975c-05eb6f237e8f";
 
         // Construct the dynamic URL
-        const dynamicUrl = `https://10ax.online.tableau.com/t/abac/views/${workbook}/${view}?:embed=y&:toolbar=n`;
+        const dynamicUrl = `https://10ax.online.tableau.com/t/${siteName}/views/${workbook}/${view}?:embed=y&:toolbar=n`;
 
         // Open the trick window
         window.trick = window.open(
