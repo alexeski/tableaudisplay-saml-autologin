@@ -44,4 +44,4 @@ You may hard code the parameters in the code, alternativelly pass them in the UR
 ## Customization
 
 - You can adjust the timeout duration in the `setTimeout` function to change how long the popup remains open before redirecting.
-- Modify the default values for `workbook`, `view`, and `entityId` as needed.
+- Modify the default values for `siteName`, `workbook`, `view`, and `entityId` as needed.
