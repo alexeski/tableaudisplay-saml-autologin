@@ -21,7 +21,7 @@ This repository contains a simple web application that facilitates auto-login to
 
 ## Usage
 
-Pass the following parameters in the URL to customize the dashboard view:
+You may hard code the parameters in the code, alternativelly pass them in the URL to customize the dashboard view:
 
    - `siteName`: The name of the Tableau Cloud site (default: `mySite`).
    - `workbook`: The name of the Tableau workbook (default: `CompanyAnalysis`).
