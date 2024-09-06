@@ -23,12 +23,13 @@ This repository contains a simple web application that facilitates auto-login to
 
 You may hard code the parameters in the code, alternativelly pass them in the URL to customize the dashboard view:
 
+   - `pod`: The name of the Tableau Cloud site (default: `10ax.online.tableau.com`).
    - `siteName`: The name of the Tableau Cloud site (default: `mySite`).
    - `workbook`: The name of the Tableau workbook (default: `CompanyAnalysis`).
    - `view`: The name of the Tableau view (default: `KPIOverview`).
    - `entityId`: The SAML entity ID for authentication (look for "Tableau Cloud entity ID" in the Tableau SAML settings page, it looks like this: `a2aecbc1-54e9-4ab0-975c-05eb6f237e8f`).
 
-   Example URL: http://localhost:3000/index.html?siteName=mySite&workbook=SalesData&view=MonthlyOverview&entityId=your-entity-id
+   Example URL: http://localhost:3000/index.html?pod=10ax.online.tableau.com&siteName=mySite&workbook=SalesData&view=MonthlyOverview&entityId=your-entity-id
    
    The application will open a popup for SSO authentication and redirect to the specified Tableau dashboard after 5 seconds.
 
@@ -44,4 +45,4 @@ You may hard code the parameters in the code, alternativelly pass them in the UR
 ## Customization
 
 - You can adjust the timeout duration in the `setTimeout` function to change how long the popup remains open before redirecting.
-- Modify the default values for `siteName`, `workbook`, `view`, and `entityId` as needed.
+- Modify the default values for `pod`, `siteName`, `workbook`, `view`, and `entityId` as needed.
